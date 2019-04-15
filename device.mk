@@ -60,10 +60,10 @@ ifneq ($(filter yes,$(MTK_PUMP_EXPRESS_PLUS_SUPPORT) $(MTK_PUMP_EXPRESS_PLUS_20_
     PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf
   endif
 
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.wfd.6750.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.pip.6750.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_01
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.fdvrgis.6750.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_02
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.meta.6750.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_meta.conf
+  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.wfd.6755.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00
+  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.pip.6755.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_01
+  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.fdvrgis.6755.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_02
+  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.meta.6755.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_meta.conf
 else
   ifeq ($(TARGET_BUILD_VARIANT),eng)
     PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.eng_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf
@@ -71,10 +71,10 @@ else
     PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/thermal.conf
   endif
 
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.wfd.6750_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.pip.6750_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_01
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.fdvrgis.6750_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_02
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.meta.6750_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_meta.conf
+  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.wfd.6755_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00
+  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.pip.6755_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_01
+  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.fdvrgis.6755_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_02
+  PRODUCT_COPY_FILES += $(LOCAL_PATH)/thermal.meta.6755_noBCCT.conf:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_meta.conf
 endif
 
 

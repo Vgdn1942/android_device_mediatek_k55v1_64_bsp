@@ -1,7 +1,7 @@
 # Use the non-open-source part, if present
 -include vendor/mediatek/k50v1_64_bsp/BoardConfigVendor.mk
 
-TARGET_BOARD_PLATFORM := mt6750
+TARGET_BOARD_PLATFORM := mt6755
 
 # Use the 6755 common part
 include device/mediatek/mt6755/BoardConfig.mk
