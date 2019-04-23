@@ -2,7 +2,7 @@
 PRODUCT_COPY_FILES += \
 	device/mediateksample/k50v1_64_bsp/twrp.fstab:recovery/root/etc/twrp.fstab
 
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 251658240
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824 # 24 Mb
 
 # Recovery
 RECOVERY_GRAPHICS_USE_LINELENGTH := true
