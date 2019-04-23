@@ -27,6 +27,14 @@ else
 BOARD_KERNEL_CMDLINE = bootopt=64S3,32N2,64N2
 endif
 
+# Recovery
+# Enable twrp variant only for 'make recoveryimage'
+# Do not enable for full build
+RECOVERY_VARIANT := twrp
 
+#TWRP
+ifeq ($(RECOVERY_VARIANT),twrp)
+include device/mediateksample/k50v1_64_bsp/twrp.mk
+endif
 
 -include device/mediatek/build/core/soong_config.mk
