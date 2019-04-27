@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-add_lunch_combo full_k50v1_64_bsp-eng
-
-add_lunch_combo full_k50v1_64_bsp-user
-add_lunch_combo full_k50v1_64_bsp-userdebug
+add_lunch_combo full_k55v1_64_bsp-eng
+add_lunch_combo full_k55v1_64_bsp-user
+add_lunch_combo full_k55v1_64_bsp-userdebug

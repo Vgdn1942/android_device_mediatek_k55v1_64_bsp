@@ -128,8 +128,8 @@ PRODUCT_PROPERTY_OVERRIDES += ro.telephony.sim.count=$(SIM_COUNT)
 PRODUCT_PROPERTY_OVERRIDES += persist.radio.default.sim=0
 
 # Audio Related Resource
-PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k50v1_64_bsp/factory/res/sound/testpattern1.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/testpattern1.wav:mtk
-PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k50v1_64_bsp/factory/res/sound/ringtone.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/ringtone.wav:mtk
+PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k55v1_64_bsp/factory/res/sound/testpattern1.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/testpattern1.wav:mtk
+PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k55v1_64_bsp/factory/res/sound/ringtone.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/ringtone.wav:mtk
 
 # Keyboard layout
 PRODUCT_COPY_FILES += device/mediatek/mt6755/ACCDET.kl:system/usr/keylayout/ACCDET.kl:mtk
@@ -154,9 +154,9 @@ ifneq ($(MTK_AUDIO_TUNING_TOOL_VERSION),)
 endif
 
 #Images for LCD test in factory mode
-PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k50v1_64_bsp/factory/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png:mtk
-PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k50v1_64_bsp/factory/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png:mtk
-PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k50v1_64_bsp/factory/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png:mtk
+PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k55v1_64_bsp/factory/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png:mtk
+PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k55v1_64_bsp/factory/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png:mtk
+PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k55v1_64_bsp/factory/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png:mtk
 
 
 # overlay has priorities. high <-> low.

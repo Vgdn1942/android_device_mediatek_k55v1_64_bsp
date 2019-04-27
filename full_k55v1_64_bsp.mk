@@ -19,18 +19,18 @@ include $(LOCAL_PATH)/ProjectConfig.mk
 PRODUCT_LOCALES := en_US zh_CN zh_TW es_ES pt_BR ru_RU fr_FR de_DE tr_TR vi_VN ms_MY in_ID th_TH it_IT ar_EG hi_IN bn_IN ur_PK fa_IR pt_PT nl_NL el_GR hu_HU tl_PH ro_RO cs_CZ ko_KR km_KH iw_IL my_MM pl_PL es_US bg_BG hr_HR lv_LV lt_LT sk_SK uk_UA de_AT da_DK fi_FI nb_NO sv_SE en_GB hy_AM zh_HK et_EE ja_JP kk_KZ sr_RS sl_SI ca_ES
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_MANUFACTURER := alps
-PRODUCT_NAME := full_k50v1_64_bsp
-PRODUCT_DEVICE := k50v1_64_bsp
-PRODUCT_MODEL := k50v1_64_bsp
+PRODUCT_MANUFACTURER := Blackview
+PRODUCT_NAME := full_k55v1_64_bsp
+PRODUCT_DEVICE := BV6000
+PRODUCT_MODEL := BV6000
 PRODUCT_POLICY := android.policy_phone
-PRODUCT_BRAND := alps
+PRODUCT_BRAND := Blackview
 
 ifeq ($(TARGET_BUILD_VARIANT), eng)
-KERNEL_DEFCONFIG ?= k50v1_64_bsp_debug_defconfig
+KERNEL_DEFCONFIG ?= k55v1_64_bsp_debug_defconfig
 else
-KERNEL_DEFCONFIG ?= k50v1_64_bsp_defconfig
+KERNEL_DEFCONFIG ?= k55v1_64_bsp_defconfig
 endif
-PRELOADER_TARGET_PRODUCT ?= k50v1_64_bsp
-LK_PROJECT ?= k50v1_64_bsp
-TRUSTY_PROJECT ?= k50v1_64_bsp
+PRELOADER_TARGET_PRODUCT ?= k55v1_64_bsp
+LK_PROJECT ?= k55v1_64_bsp
+TRUSTY_PROJECT ?= k55v1_64_bsp
