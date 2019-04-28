@@ -1,6 +1,3 @@
-# Ramdisk
-#PRODUCT_COPY_FILES += \
-#	device/mediateksample/k55v1_64_bsp/twrp.fstab:recovery/root/etc/twrp.fstab
 
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824 # 24 Mb
 

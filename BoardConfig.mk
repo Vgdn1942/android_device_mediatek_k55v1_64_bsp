@@ -6,7 +6,7 @@ TARGET_BOARD_PLATFORM := mt6755
 # Recovery
 # Enable twrp variant only for 'make recoveryimage'
 # Do not enable for full build
-RECOVERY_VARIANT := twrp
+#RECOVERY_VARIANT := twrp
 
 # Use the 6755 common part
 include device/mediatek/mt6755/BoardConfig.mk

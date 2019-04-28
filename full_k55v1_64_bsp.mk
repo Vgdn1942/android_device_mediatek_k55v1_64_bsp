@@ -21,7 +21,7 @@ PRODUCT_LOCALES := en_US zh_CN zh_TW es_ES pt_BR ru_RU fr_FR de_DE tr_TR vi_VN m
 # Set those variables here to overwrite the inherited values.
 PRODUCT_MANUFACTURER := Blackview
 PRODUCT_NAME := full_k55v1_64_bsp
-PRODUCT_DEVICE := BV6000
+PRODUCT_DEVICE := k55v1_64_bsp
 PRODUCT_MODEL := BV6000
 PRODUCT_POLICY := android.policy_phone
 PRODUCT_BRAND := Blackview
