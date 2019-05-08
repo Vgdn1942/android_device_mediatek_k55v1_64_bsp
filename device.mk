@@ -135,6 +135,7 @@ PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k55v1_64_bsp/factory/re
 # Keyboard layout
 PRODUCT_COPY_FILES += device/mediatek/mt6755/ACCDET.kl:system/usr/keylayout/ACCDET.kl:mtk
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/mtk-kpd.kl:system/usr/keylayout/mtk-kpd.kl:mtk
+PRODUCT_COPY_FILES += $(LOCAL_PATH)/mtk-tpd.kl:system/usr/keylayout/mtk-tpd.kl:mtk
 
 # Microphone
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/android.hardware.microphone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.microphone.xml
