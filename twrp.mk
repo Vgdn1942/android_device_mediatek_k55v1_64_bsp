@@ -1,4 +1,4 @@
-
+# Partition size
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824 # 24 Mb
 
 # Recovery
@@ -24,7 +24,7 @@ TW_CRYPTO_MNT_POINT := "/data"
 TW_CRYPTO_FS_OPTIONS := "noatime,nosuid,nodev,noauto_da_alloc"
 TW_CUSTOM_CPU_TEMP_PATH := "/sys/devices/virtual/thermal/thermal_zone1/temp"
 TW_USE_TOOLBOX := true
-TW_MTP_DEVICE := "/dev/mtp_usb"
 TW_INCLUDE_CRYPTO := true
 TW_CRYPTO_USE_SYSTEM_VOLD := true
+#TW_MTP_DEVICE := "/dev/mtp_usb"
 #TW_CUSTOM_BATTERY_PATH :=
