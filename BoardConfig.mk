@@ -42,7 +42,7 @@ BOARD_KERNEL_CMDLINE = bootopt=64S3,32N2,64N2
 endif
 endif
 
-#TWRP
+# TWRP
 ifeq ($(RECOVERY_VARIANT),twrp)
 include device/mediateksample/k55v1_64_bsp/twrp.mk
 endif

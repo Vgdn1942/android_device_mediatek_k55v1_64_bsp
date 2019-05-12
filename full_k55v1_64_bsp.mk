@@ -26,11 +26,16 @@ PRODUCT_MODEL := BV6000
 PRODUCT_POLICY := android.policy_phone
 PRODUCT_BRAND := Blackview
 
+PRODUCT_DEFAULT_LOCALE="ru-BY"
+PRIVATE_BUILD_DESC="full_s12v55_jk_3m_gms_rz-user 7.0 NRD90M 1491960514 release-keys"
+BUILD_FINGERPRINT="Blackview/Blackview/Blackview:7.0/NRD90M/1491960514:user/release-keys"
+
 ifeq ($(TARGET_BUILD_VARIANT), eng)
 KERNEL_DEFCONFIG ?= k55v1_64_bsp_debug_defconfig
 else
 KERNEL_DEFCONFIG ?= k55v1_64_bsp_defconfig
 endif
+
 PRELOADER_TARGET_PRODUCT ?= k55v1_64_bsp
 LK_PROJECT ?= k55v1_64_bsp
 TRUSTY_PROJECT ?= k55v1_64_bsp
