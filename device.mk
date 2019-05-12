@@ -194,9 +194,45 @@ ifeq (yes,$(strip $(MTK_GMO_RAM_OPTIMIZE)))
 endif
 DEVICE_PACKAGE_OVERLAYS += device/mediatek/common/overlay/navbar
 
-
-
 $(call inherit-product, device/mediatek/mt6755/device.mk)
 
 $(call inherit-product-if-exists, vendor/mediatek/libs/$(MTK_TARGET_PROJECT)/device-vendor.mk)
+
+# GAPPS
+$(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+
+GAPPS_VARIANT := nano
+
+GAPPS_FORCE_PACKAGE_OVERRIDES := true
+
+GAPPS_PRODUCT_PACKAGES += \
+    CalculatorGoogle \
+    CalendarGooglePrebuilt \
+    CarrierServices \
+    Chrome \
+    GoogleContacts \
+    GoogleContactsSyncAdapter \
+    GoogleDialer \
+    GooglePackageInstaller \
+    LatinImeGoogle \
+    Maps \
+    PixelLauncher \
+    PixelLauncherIcons \
+    PlayGames \
+    PrebuiltDeskClockGoogle \
+    PrebuiltGmail \
+    PrebuiltKeep \
+    TranslatePrebuilt \
+    WebViewGoogle \
+    YouTube
+
+GAPPS_EXCLUDED_PACKAGES := \
+    Books \
+    Hangouts \
+    Music2 \
+    Newsstand \
+    Photos \
+    Street \
+    Velvet \
+    Videos
 
