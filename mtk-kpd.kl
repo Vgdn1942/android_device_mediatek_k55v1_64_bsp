@@ -21,6 +21,7 @@ key 127   SYM
 key 217   SEARCH
 key 228   POUND
 key 227   STAR
+#key 231   PTT
 key 231   CALL
 key 61    CALL
 key 232   DPAD_CENTER
@@ -34,6 +35,7 @@ key 114   VOLUME_DOWN
 key 113   MUTE
 key 116   POWER
 key 212   CAMERA
+#key 211   SOS
 key 211   FOCUS
 
 key 16    Q
@@ -95,5 +97,3 @@ key 165   MEDIA_PREVIOUS
 key 168   MEDIA_REWIND
 key 159   MEDIA_FAST_FORWARD
 
-key 249   FUNC1
-key 250   FUNC2
