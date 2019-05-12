@@ -209,21 +209,17 @@ GAPPS_PRODUCT_PACKAGES += \
     CalculatorGoogle \
     CalendarGooglePrebuilt \
     CarrierServices \
-    Chrome \
     GoogleContacts \
     GoogleContactsSyncAdapter \
     GoogleDialer \
     GooglePackageInstaller \
+    Launcher \
     LatinImeGoogle \
-    Maps \
-    PixelLauncher \
-    PixelLauncherIcons \
     PlayGames \
     PrebuiltDeskClockGoogle \
     PrebuiltGmail \
     PrebuiltKeep \
     TranslatePrebuilt \
-    WebViewGoogle \
     YouTube
 
 GAPPS_EXCLUDED_PACKAGES := \
