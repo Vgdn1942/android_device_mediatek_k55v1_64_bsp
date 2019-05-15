@@ -103,7 +103,7 @@ endif
 
 # alps/external/libnfc-opennfc/open_nfc/hardware/libhardware/modules/nfcc/nfc_hal_microread/Android.mk
 # PRODUCT_COPY_FILES += external/libnfc-opennfc/open_nfc/hardware/libhardware/modules/nfcc/nfc_hal_microread/driver/open_nfc_driver.ko:$(TARGET_COPY_OUT_VENDOR)/lib/open_nfc_driver.ko:mtk
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
+#PRODUCT_COPY_FILES += $(LOCAL_PATH)/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf
 
 # alps/frameworks/av/media/libeffects/factory/Android.mk
 PRODUCT_COPY_FILES += frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
@@ -143,6 +143,39 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/android.hardware.microphone.xml:$(TARGET_COP
 # Camera
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml
 
+ifeq ($(strip $(AGOLD_CAMERA_VERSION)),yes)
+PRODUCT_PACKAGES += \
+	lib_cam_imx258_mipi_raw_SYX_0AQH5_v1 \
+	lib_cam_s5k3l8_mipi_raw_BLX_50065B_v1 \
+	lib_cam_s5k3l8_mipi_raw_JLX_50064_v1 \
+	lib_cam_s5k3l8_mipi_raw_SY_50065_v1 \
+	lib_cam_ov13853_mipi_raw_SYX_50016A_v1 \
+	lib_cam_ov5670_mipi_raw_SYX_M509_v1
+
+PRODUCT_PACKAGES += \
+	lib_lens_dw9714af_v1 \
+	lib_lens_dw9714af_v2 \
+	lib_lens_dw9714af_v3 \
+	lib_lens_dw9714af_v4 \
+	lib_lens_dw9714af_v5 \
+	lib_lens_dw9714af_v6 \
+	lib_lens_dw9714af_v8 \
+	lib_lens_dw9714af_v9 \
+	lib_lens_dw9714af_v10 \
+	lib_lens_dw9714af_v11 \
+	lib_lens_dw9714af_v12 \
+	lib_lens_dw9714af_v13 \
+	lib_lens_dw9714af_v14 \
+	lib_lens_dw9800af_v1 \
+	lib_lens_dw9800af_v2 \
+	lib_lens_dw9800af_v3 \
+	lib_lens_dw9763af_v1 \
+	lib_lens_dw9763af_v2 \
+	lib_lens_dw9763af_v3 \
+	lib_lens_dw9763af_v4 \
+	lib_lens_dw9763af_v5
+endif
+
 # Audio Policy
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf:mtk
 
@@ -162,7 +195,6 @@ PRODUCT_COPY_FILES += vendor/mediatek/proprietary/custom/k55v1_64_bsp/factory/re
 
 
 # overlay has priorities. high <-> low.
-
 DEVICE_PACKAGE_OVERLAYS += device/mediatek/common/overlay/sd_in_ex_otg
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
@@ -205,6 +237,10 @@ GAPPS_VARIANT := nano
 
 GAPPS_FORCE_PACKAGE_OVERRIDES := true
 
+GAPPS_BYPASS_PACKAGE_OVERRIDES := \
+    GoogleDialer \
+    GoogleMessaging
+
 GAPPS_PRODUCT_PACKAGES += \
     CalculatorGoogle \
     CalendarGooglePrebuilt \
@@ -212,8 +248,8 @@ GAPPS_PRODUCT_PACKAGES += \
     GoogleContacts \
     GoogleContactsSyncAdapter \
     GoogleDialer \
+    GoogleMessaging \
     GooglePackageInstaller \
-    Launcher \
     LatinImeGoogle \
     PlayGames \
     PrebuiltDeskClockGoogle \
