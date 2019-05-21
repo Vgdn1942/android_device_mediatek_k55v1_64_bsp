@@ -44,7 +44,7 @@ endif
 
 # TWRP
 ifeq ($(RECOVERY_VARIANT),twrp)
-include device/mediateksample/k55v1_64_bsp/twrp.mk
+include device/mediatek/k55v1_64_bsp/twrp.mk
 endif
 
 -include device/mediatek/build/core/soong_config.mk

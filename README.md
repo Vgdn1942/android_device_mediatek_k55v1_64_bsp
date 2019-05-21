@@ -1,1 +1,1 @@
-# android_device_mediateksample_k55v1_64_bsp
+# android_device_mediatek_k55v1_64_bsp

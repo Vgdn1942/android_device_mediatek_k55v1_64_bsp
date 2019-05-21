@@ -150,7 +150,6 @@ PRODUCT_COPY_FILES += $(LOCAL_PATH)/android.hardware.microphone.xml:$(TARGET_COP
 # Camera
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml
 
-ifeq ($(strip $(AGOLD_CAMERA_VERSION)),yes)
 PRODUCT_PACKAGES += \
 	lib_cam_imx258_mipi_raw_SYX_0AQH5_v1 \
 	lib_cam_s5k3l8_mipi_raw_BLX_50065B_v1 \
@@ -181,7 +180,6 @@ PRODUCT_PACKAGES += \
 	lib_lens_dw9763af_v3 \
 	lib_lens_dw9763af_v4 \
 	lib_lens_dw9763af_v5
-endif
 
 # Audio Policy
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf:mtk
